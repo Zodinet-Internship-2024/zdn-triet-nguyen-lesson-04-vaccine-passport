@@ -1,0 +1,58 @@
+@import "../../styles/variables.scss";
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: $footer-color;
+  justify-content: center;
+  padding: $header-padding;
+  gap: $gap-header;
+  color: $text-color-footer;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  gap: $gap-footer;
+  font-size: $font-size-logo;
+  font-weight: $font-weight-logo;
+}
+
+
+footer p, h3 {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 2px 0;
+}
+
+footer span {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.follow-us {
+  display: flex;
+  align-items: center;
+  gap: $gap-logo;
+  margin: 20px 0;
+}
+
+.website {
+  align-self: center;
+  font-weight: 700;
+  padding: 10px;
+  margin: 20px 0;
+  border-radius: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $text-color-footer;
+}
+
+.logo {
+  align-self: center;
+}

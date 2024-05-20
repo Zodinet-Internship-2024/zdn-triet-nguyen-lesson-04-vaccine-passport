@@ -1,0 +1,36 @@
+$breakpoint: 768px;
+
+@mixin responsive {
+  @media (min-width: #{$breakpoint - 1px}) {
+    @content;
+  }
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+
+  @include responsive {
+    flex-direction: row;
+    padding: 50px 0;
+  }
+}
+
+@include responsive {
+  .body > img {
+    order: 1;
+    flex-grow: 1;
+  }
+
+  .body > div {
+    order: 2;
+  }
+}
+
+header {
+  justify-content: center;
+  @include responsive {
+    justify-content: start;
+  }
+}

@@ -1,0 +1,16 @@
+@import "../../styles/variables.scss";
+
+.logo__clink {
+  display: flex;
+  font-size: $font-size-logo;
+  font-weight: $font-weight-logo;
+  flex-direction: row;
+  align-items: center;
+  text-align: start;
+  text-decoration: none;
+  gap: $gap-logo;
+
+  img {
+    width: $size-logo;
+  }
+}

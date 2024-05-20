@@ -1,0 +1,15 @@
+.body {
+  display: flex;
+  justify-content: space-around;
+  background-image: url(../../assets/images/background-vaccine.png);
+  background-size: cover;
+}
+
+.body > img {
+  max-width: 500px;
+  align-self: center;
+}
+
+.body > div {
+  align-self: center;
+}
