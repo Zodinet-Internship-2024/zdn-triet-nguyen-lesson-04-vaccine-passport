@@ -42,7 +42,8 @@ const Form: FunctionComponent = () => {
   };
 
   const schema = z.object({
-    idNumber: z.string().nonempty("Số CMND/CCCD không được để trống"),
+    idNumber: z.string().nonempty("Số CMND/CCCD không được để trống")
+    .length(12, "Số CMND/CCCD phải có đúng 12 chữ số"),
     dob: z.date().refine((value) => {
       const currentDate = new Date();
       const dobDate = new Date(value);
@@ -54,7 +55,6 @@ const Form: FunctionComponent = () => {
     defaultValues: {
       fullName: "",
       gender: "",
-      dob: new Date(),
       city: "",
       district: "",
       ward: "",
